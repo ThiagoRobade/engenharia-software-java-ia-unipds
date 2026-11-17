@@ -19,3 +19,19 @@
 **Comandos úteis:**
 - `System.out.println("Texto");` -> Imprime e pula uma linha.
 - `System.out.print("Texto");` -> Imprime e continua na mesma linha.
+
+## Aula 2: JVM, JSR e JEP
+
+**O que é o Bytecode (.class)?**
+- Quando compilamos um arquivo `.java`, ele vira um `.class`.
+- Esse arquivo não tem texto legível, é um código binário chamado **Bytecode**, feito para a JVM entender.
+- Podemos "espiar" esse código usando o comando `javap -c NomeDaClasse` no terminal.
+
+**A JVM é uma Plataforma (não só para Java):**
+- A Máquina Virtual Java (JVM) executa o bytecode. Por isso o Java é "Write Once, Run Anywhere".
+- Como ela executa o bytecode, outras linguagens também podem rodar nela! (Ex: Kotlin, Scala, Groovy, Clojure).
+
+**Como o Java evolui (JCP e JEP):**
+- **JSR:** Pedidos de especificação (mais lentos).
+- **JEP (JDK Enhancement Proposals):** Propostas de melhoria (mais ágeis). É por causa delas que o Java tem uma versão nova a cada 6 meses!
+- **Preview Features:** Recursos que saem antes da versão final para a comunidade testar (foi o que usamos no `void main()`).
