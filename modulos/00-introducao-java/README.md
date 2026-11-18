@@ -35,3 +35,27 @@
 - **JSR:** Pedidos de especificação (mais lentos).
 - **JEP (JDK Enhancement Proposals):** Propostas de melhoria (mais ágeis). É por causa delas que o Java tem uma versão nova a cada 6 meses!
 - **Preview Features:** Recursos que saem antes da versão final para a comunidade testar (foi o que usamos no `void main()`).
+
+## Aula 3: Variáveis, Operadores e Condicionais
+
+**Tipos de Dados (Java é fortemente tipada):**
+- `String`: Texto. Ex: "Sanduíche".
+- `boolean`: `true` ou `false`.
+- `double`: Números decimais (padrão). Ex: `3.50`.
+- `float`: Decimal menor (precisa de 'f'). Convenção é usar `double`.
+- `long`: Inteiros gigantes (precisa de 'L'). Ex: `3000000000L`.
+- `int`: Inteiros padrão.
+- **`var`**: Inferência de tipo (Java 10+). O Java "adivinha" o tipo. Ex: `var nome = "Chaves";`
+
+**Operadores e Precedência:**
+- `+`, `-`, `*`, `/`, `%` (módulo/resto).
+- Multiplicação/divisão vêm antes de soma/subtração. Use `( )` para forçar a ordem.
+- **Divisão de Inteiros:** `11 / 2` resulta em `5` (corta os decimais). O resto é `1` (`11 % 2`).
+
+**Estruturas Condicionais:**
+- `if / else if / else`: Avalia em sequência e para na primeira condição verdadeira.
+- `switch-case`: Compara uma variável com vários valores. **IMPORTANTE:** usar `break;` no final de cada `case` para evitar que ele execute o próximo sem querer. `default` é o `else`.
+
+**Novidade JDK 25:**
+- Uso da classe `IO.println()` para imprimir no console (substitui o antigo `System.out.println`).
+- O método `main` pode ser simplificado para apenas `void main()`.

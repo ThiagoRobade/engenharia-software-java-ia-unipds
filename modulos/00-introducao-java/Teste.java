@@ -1,8 +1,4 @@
-class Programa {
-    public static void main(String[] args) {
-        System.out.println("Olá, mundo!");
-        System.out.println("Oi, Java!");
-    }
+void main() {
+    IO.println("Olá, mundo!");
+    IO.println("Oi, Java!");
 }
-
-
