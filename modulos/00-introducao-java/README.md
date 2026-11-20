@@ -59,3 +59,19 @@
 **Novidade JDK 25:**
 - Uso da classe `IO.println()` para imprimir no console (substitui o antigo `System.out.println`).
 - O método `main` pode ser simplificado para apenas `void main()`.
+
+## Aula 4: Arrays e Laços de Repetição
+
+**Por que usar Arrays?**
+- Criar variáveis para cada item (`preco1`, `preco2`, `preco3`...) não escala.
+- Um **Array** agrupa vários valores do mesmo tipo em uma única estrutura, acessíveis por índices (que começam em 0). O tamanho é fixo.
+
+**Laços de Repetição:**
+- **`while`:** Verifica a condição *antes* de executar. (Pode executar 0 vezes).
+- **`do-while`:** Executa o bloco *pelo menos uma vez* e depois verifica a condição.
+- **`for`:** Ideal quando sabemos o número de repetições (inicialização; condição; incremento).
+- **`for-each`:** A forma mais limpa e moderna de percorrer um array inteiro quando não precisamos do índice.
+
+**Controle de Fluxo (break e continue):**
+- **`break`:** Quebra o laço imediatamente (sai dele).
+- **`continue`:** Pula a iteração atual e vai para a próxima, sem executar o resto do código daquele bloco.
