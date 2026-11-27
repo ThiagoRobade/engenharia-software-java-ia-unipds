@@ -75,3 +75,13 @@
 **Controle de Fluxo (break e continue):**
 - **`break`:** Quebra o laço imediatamente (sai dele).
 - **`continue`:** Pula a iteração atual e vai para a próxima, sem executar o resto do código daquele bloco.
+
+## Aula 5: Classes, Atributos e Objetos
+
+**O Problema:** Criar variáveis soltas para cada item (`nomeItem1`, `precoItem1`, `nomeItem2`...) é desorganizado e não escala. Os dados de um mesmo item ficam espalhados.
+
+**A Solução (POO):**
+- **Classe:** É o "molde" ou "planta" de algo. Ex: a classe `ItemCardapio` define que todo item tem nome, preço, etc.
+- **Atributos:** São as variáveis dentro da classe (as características do objeto). Ex: `String nome; double preco;`
+- **Objeto:** É a "materialização" da classe (a coisa de verdade). Criamos com a palavra `new`. Ex: `var item1 = new ItemCardapio();`
+- **Notação de Ponto (`.`):** Usamos para acessar ou alterar os dados do objeto. Ex: `item1.nome = "Refresco";`
