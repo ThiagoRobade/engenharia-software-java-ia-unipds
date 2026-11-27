@@ -1,7 +1,15 @@
+/**
+ * Exercício da Aula 3: Calcula o Índice de Massa Corporal (IMC).
+ * Fórmula: IMC = peso / (altura * altura)
+ */
 void main() {
-    double peso = 88.0;
-    double altura = 1.72;
+    // Dados de entrada
+    double peso = 75.5;   // Peso em kg
+    double altura = 1.80; // Altura em metros
+
+    // Cálculo do IMC
     double imc = peso / (altura * altura);
 
-    IO.println("Seu IMC é " + imc);
+    // Exibindo o resultado
+    IO.println("Seu IMC é: " + imc);
 }

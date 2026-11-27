@@ -1,13 +1,12 @@
+/**
+ * Exercício da Aula 4: Demonstra iteração em um array de Strings usando for-each.
+ */
 void main() {
-    String[] listaDeCompras = new String[5];
+    // Array de Strings (itens da lista)
+    var listaDeCompras = new String[]{"Arroz", "Feijão", "Macarrão", "Leite", "Café"};
 
-    listaDeCompras[0] = "Pão";
-    listaDeCompras[1] = "Frango";
-    listaDeCompras[2] = "Melão";
-    listaDeCompras[3] = "Nescau";
-    listaDeCompras[4] = "Leite de Soja";
-
-    for (String item : listaDeCompras) {
-        IO.println("Não esquecer de comprar " + item);
+    // Percorrendo o array com for-each
+    for (var item : listaDeCompras) {
+        IO.println("Não esquecer de comprar: " + item);
     }
 }

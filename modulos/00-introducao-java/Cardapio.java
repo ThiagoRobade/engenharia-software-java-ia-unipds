@@ -1,26 +1,32 @@
+/**
+ * Código oficial da Aula 3: Demonstra variáveis, inferência de tipo (var),
+ * operadores e estruturas condicionais (if-else e switch-case).
+ */
 void main() {
+    // 1. Modelando os dados com var (Inferência de tipo)
     var nome = "Sanduíche de Presunto do Chaves";
     var descricao = "Sanduíche de presunto simples, mas feito com muito amor.";
     var emPromocao = true;
     var preco = 3.50;
     var precoComDesconto = 2.99;
-    var id = 3_000_000_000L;
-    int categoria = 2;
+    var id = 3_000_000_000L; // O 'L' indica que é long
+    int categoria = 2;       // 2 = Pratos Principais
 
     IO.println("Produto: " + nome);
     IO.println("ID: " + id);
 
+    // 2. Operadores e Precedência
+    // Cálculo correto usando parênteses (se não usar, a divisão acontece primeiro)
     double porcentagemDesconto = (preco - precoComDesconto) / preco;
     IO.println("Porcentagem de desconto: " + porcentagemDesconto);
 
+    // 3. Demonstração de divisão inteira e módulo (resto)
     int x = 11;
     int y = 2;
-    int z = x / y;
-    IO.println("Divisão inteira (11/2): " + z);
+    IO.println("Divisão inteira (11/2): " + (x / y)); // Resultado: 5
+    IO.println("Resto da divisão (11%2): " + (x % y)); // Resultado: 1
 
-    int w = x % y;
-    IO.println("Resto da divisão (11%2): " + w);
-
+    // 4. Estruturas Condicionais (if-else)
     IO.println("\n--- Usando if-else ---");
     if (categoria == 1) {
         IO.println("Categoria: Entradas");
@@ -34,8 +40,9 @@ void main() {
         IO.println("Categoria não encontrada...");
     }
 
+    // 5. Estruturas Condicionais (switch-case)
     IO.println("\n--- Usando switch-case ---");
-    switch(categoria) {
+    switch (categoria) {
         case 1:
             IO.println("Categoria: Entradas");
             break;

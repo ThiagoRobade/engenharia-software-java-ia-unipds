@@ -1,16 +1,17 @@
+/**
+ * Exercício da Aula 4: Calcula a média de um array de notas usando o for tradicional.
+ */
 void main() {
-    double[] nota = new double[5];
+    // Array de notas
+    double[] notas = {8.5, 9.0, 7.2, 6.0, 10.0};
     double soma = 0.0;
 
-    nota[0] = 8.5;
-    nota[1] = 9.0;
-    nota[2] = 7.2;
-    nota[3] = 6.0;
-    nota[4] = 10.0;
-
-    for (int i = 0; i < nota.length; i++) {
-        soma += nota[i];
+    // For tradicional (usando o índice 'i')
+    for (int i = 0; i < notas.length; i++) {
+        soma += notas[i]; // Soma a nota na posição 'i'
     }
-    double media = soma / nota.length;
-    IO.println("A média do aluno é " + media);
+
+    // A média é a soma dividida pela quantidade de itens (tamanho do array)
+    double media = soma / notas.length;
+    IO.println("A média do aluno é: " + media);
 }
